@@ -11,8 +11,9 @@
   "dependencies": {
     "@chakra-ui/react": "^3.2.0",
     "@openzeppelin/contracts": "^5.1.0",
+    "@quai/hardhat-deploy-metadata": "^1.0.3",
     "next": "15.0.3",
-    "quais": "^1.0.0-alpha.29",
+    "quais": "^1.0.0-alpha.35",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

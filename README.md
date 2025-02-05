@@ -11,7 +11,7 @@ The dApp provides owner functionality when the connected address matches the own
 
 # Getting Started
 
-Download the [Pelagus Wallet](https://pelaguswallet.io/) and visit the [Faucet](https://faucet.quai.network/) to get some QUAI.
+Download the [Pelagus Wallet](https://pelaguswallet.io/) and visit the [Faucet](https://orchard.faucet.quai.network/) to get some QUAI.
 
 You will need some QUAI to deploy and interact with the dApp.
 
@@ -19,7 +19,7 @@ Once the wallet is setup you will need to export your QUAI address's private key
 
 ## Clone the repo
 
-`git clone https://github.com/mpoletiek/quai-nft-dapp`
+`git clone https://github.com/dominant-strategies/quai-nft-dapp`
 
 ## Install
 
@@ -60,12 +60,10 @@ Note the contract address at the end of `Contract deployed to: <contract-address
 
 We need to tell the dApp where our contract resides.
 
-Edit `src/app/page.tsx` and set the contract address to your contract address from above by editing the `contractAddress` variable on line 28.
+Edit `.env` and set the contract address to your contract address from above by editing the `NEXT_PUBLIC_DEPLOYED_CONTRACT` variable.
 
 ```
-const { web3Provider, account } = useContext(StateContext);
-const contractAddress = "0x003e719cbEA0211fdbF9172F745542809bB4F0cE"; // Change this to your contract address
-const tokenuri = "https://example.com";
+NEXT_PUBLIC_DEPLOYED_CONTRACT=0x003d8Ab5376F1948916c2BCeE40DeAC3dC198475
 ```
 
 ## Run the App

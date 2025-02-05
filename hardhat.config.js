@@ -3,6 +3,7 @@
  */
 
 require('@nomicfoundation/hardhat-toolbox')
+require("@quai/hardhat-deploy-metadata")
 const dotenv = require('dotenv')
 dotenv.config({ path: './.env' })
 
