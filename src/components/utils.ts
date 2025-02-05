@@ -14,19 +14,19 @@ export const sortedQuaiShardNames: ShardNames = {
 
 // ---- explorer url builders ---- //
 export const buildRpcUrl = () => {
-  return `http://rpc.quai.network`;
+  return `https://orchard.rpc.quai.network`;
 };
 
 export const buildExplorerUrl = () => {
-  return `https://quaiscan.io`;
+  return `https://orchard.quaiscan.io`;
 };
 
 export const buildAddressUrl = (address: string) => {
-  return `https://quaiscan.io/address/${address}`;
+  return `https://orchard.quaiscan.io/address/${address}`;
 };
 
 export const buildTransactionUrl = (txHash: string) => {
-  return `https://quaiscan.io/tx/${txHash}`;
+  return `https://orchard.quaiscan.io/tx/${txHash}`;
 };
 
 // ---- dispatchers ---- //

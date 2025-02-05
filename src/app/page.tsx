@@ -29,7 +29,7 @@ export default function Mint() {
   const tokenuri = "https://example.com";
 
   const getContractBalance = async () => {
-    const resp = await fetch('https://quaiscan.io/api/v2/addresses/'+contractAddress);
+    const resp = await fetch('https://orchard.quaiscan.io/api/v2/addresses/'+contractAddress);
     const ret = await resp.json();
     if(ret.coin_balance){
       setContractBalance(Number(ret.coin_balance)/Number(1000000000000000000));
